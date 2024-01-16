@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="635.0" style="-fx-background-color: #F9EAA2;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.Controller">
+    <children>
+      <ButtonBar layoutX="274.0" layoutY="101.0" prefHeight="88.0" prefWidth="346.0">
+         <buttons>
+              <Button mnemonicParsing="false" onAction="#actionZip" prefHeight="71.0" prefWidth="114.0" style="-fx-background-color: #6F4B06;" text="Zip" textFill="#fffca2">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#actionRar" prefHeight="69.0" prefWidth="100.0" style="-fx-background-color: #6F4B06;" text="Rar" textFill="#fffca2">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#actionJar" prefHeight="69.0" prefWidth="100.0" style="-fx-background-color: #6F4B06;" text="Jar" textFill="#fffca2">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+        <Button layoutX="381.0" layoutY="200.0" mnemonicParsing="false" onAction="#actionUnarchive" prefHeight="56.0" prefWidth="131.0" style="-fx-background-color: #6F4B06;" text="Unarchive" textFill="#fffca2">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="296.0" layoutY="263.0" prefHeight="82.0" prefWidth="295.0">
+         <buttons>
+              <Button mnemonicParsing="false" onAction="#actionEncrypt" prefHeight="52.0" prefWidth="160.0" style="-fx-background-color: #6F4B06;" text="Encrypt" textFill="#fffca2">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Button>
+              <Button mnemonicParsing="false" onAction="#actionDecrypt" prefHeight="53.0" prefWidth="100.0" style="-fx-background-color: #6F4B06;" text="Decrypt" textFill="#fffca2">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="266.0" prefHeight="95.0" prefWidth="363.0">
+         <buttons>
+              <Button mnemonicParsing="false" onAction="#actionTXT" prefHeight="73.0" prefWidth="107.0" style="-fx-background-color: #6F4B06;" text="To TXT" textFill="#fffca2">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Button>
+              <Button mnemonicParsing="false" onAction="#actionJSON" prefHeight="74.0" prefWidth="100.0" style="-fx-background-color: #6F4B06;" text="To JSON" textFill="#fffca2">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#actionXML" prefHeight="75.0" prefWidth="100.0" style="-fx-background-color: #6F4B06;" text="To XML" textFill="#fffca2">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+                </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+      <VBox alignment="CENTER" prefHeight="353.0" prefWidth="235.0" style="-fx-background-color: #FAD371;">
+         <children>
+              <Button fx:id="chooseButton" mnemonicParsing="false" onAction="#actionButton" onMouseDragEntered="#actionChooseEntered" prefHeight="56.0" prefWidth="166.0" style="-fx-background-color: #614106;" text="Choose file" textFill="#fffca2">
+                  <font>
+                      <Font name="Berlin Sans FB" size="22.0" />
+                  </font>
+              </Button>
+            <Separator prefHeight="86.0" prefWidth="235.0" visible="false" />
+                <Label fx:id="fileLabel" prefHeight="55.0" prefWidth="200.0" text="File: " textFill="#614106">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="resultLabel" prefHeight="55.0" prefWidth="203.0" text="Result:" textFill="#614106">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutX="10.0" layoutY="88.0" prefHeight="23.0" prefWidth="235.0" visible="false" />
+            <Button layoutX="44.0" layoutY="60.0" mnemonicParsing="false" onAction="#actionExit" onMouseDragEntered="#actionChooseEntered" prefHeight="18.0" prefWidth="114.0" style="-fx-background-color: #614106;" text="Exit" textFill="#fffca2">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
